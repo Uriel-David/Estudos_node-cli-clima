@@ -1,20 +1,27 @@
 {
   "name": "estudos_node-cli-clima",
-  "version": "1.0.0",
-  "description": "CLI that shows the weather of a city in real time.",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "CLI que mostra o clima de uma cidade em tempo real",
+  "preferGlobal": true,
   "bin": {
-    "estudos_node-cli-clima": "bin/clima.js"
+    "clima": "./bin/clima"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Uriel-David/Estudos_node-cli-clima.git"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.5.0"
+  },
   "bugs": {
     "url": "https://github.com/Uriel-David/Estudos_node-cli-clima/issues"
   },
